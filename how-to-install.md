@@ -6,6 +6,8 @@ Here is a simple yet complete guide on installation of AOSC OS.
 
 A tarball is the basic and main way we ship AOSC OS as, a "tarball" literally means a system all packed in a `tar.xz` archive. It is probably the fastest way to "physically" install a copy of AOSC OS on your device.
 
+Get your tarballs from https://www.anthonos.org (currently a temporary portal for downloads, pick the one that suites).
+
 ### First things first
 
 Be prepared for installation from tarballs.
@@ -73,6 +75,12 @@ grub-mkconfig -o /boot/grub/grub.cfg
 #### Multiple partition scenario
 
 If you have chosen to split `/home` or whatever to another partition, remember to write a valid `/etc/fstab` file.
+
+#### Passwords
+
+The default "normal" user `aosc` has `anthon` as password.
+
+And `root` has the same.
 
 ## Docker
 
