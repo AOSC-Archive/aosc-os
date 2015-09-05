@@ -23,7 +23,7 @@ The shell code below shows how it is been done.
 
 ```bash
 cd ${MOUNT}
-tar pxf /path/to/tarball.tar.xz
+tar pxfJ /path/to/tarball.tar.xz
 # add "v" to paramenter for a much more exciting experience.
 ```
 
@@ -70,6 +70,15 @@ And finally configure GRUB.
 
 ```bash
 grub-mkconfig -o /boot/grub/grub.cfg
+```
+
+Note: if the system did not ship with an initrd, GRUB will not support UUID in configuration; if you would like to use the UUID feature, you would need to generate one yourself with `dracut`.
+
+```
+# find our the shipped kernel version
+ls /usr/lib/module
+# and "dracut" the initrd, with the kernel version you found, replace ${kernver} with the one you found
+dracut ${kernver}
 ```
 
 #### Multiple partition scenario
