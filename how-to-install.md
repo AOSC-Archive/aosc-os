@@ -4,7 +4,7 @@ Here is a simple yet complete guide on installation of AOSC OS.
 
 ### Baytrail device users
 
-You may want to read [Notes for Baytrail](https://github.com/AOSC-Dev/aosc-os/blob/master/notes-for-baytrail-m.md) after you have finished installing according to this guide for issue workarounds and tips.
+You may want to read [Notes for Baytrail](https://github.com/AOSC-Dev/aosc-os/blob/master/notes-for-baytrail.md) after you have finished installing according to this guide for issue workarounds and tips.
 
 ## Tarballs
 
