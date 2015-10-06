@@ -39,7 +39,7 @@ kernel configuration has the support built in.
 
 ```bash
 # find our the shipped kernel version
-ls /usr/lib/module
+ls /usr/lib/modules
 # and "dracut" the initrd, with the kernel version you found, replace ${kernver} with the one you found
 dracut ${kernver}
 ```

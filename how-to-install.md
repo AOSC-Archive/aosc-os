@@ -80,7 +80,7 @@ Note: if the system did not ship with an initrd, GRUB will not support UUID in c
 
 ```bash
 # find our the shipped kernel version
-ls /usr/lib/module
+ls /usr/lib/modules
 # and "dracut" the initrd, with the kernel version you found, replace ${kernver} with the one you found
 dracut ${kernver}
 ```
