@@ -7,6 +7,20 @@ installing AOSC OS according to the
 
 The steps are not for the faint of heart, so prepare yourself for the procedures.
 
+##Initrd generation
+It is required for devices using Realtek-based eMMC/SDIO controllers to generate an `initrd`
+(an initialization RAM disk) for AOSC OS to detect the SD card/eMMC controller during the
+boot. Without an `initrd` AOSC OS will fail to boot with such controllers. If you are sure
+that you are not using a Realtek-based controller, you may skip this process as the Linux
+kernel configuration has the support built in.
+
+```bash
+# find our the shipped kernel version
+ls /usr/lib/modules
+# and "dracut" the initrd, with the kernel version you found, replace ${kernver} with the one you found
+dracut ${kernver}
+```
+
 ##Non-64 bit EFI
 AOSC OS ships with a complete suite of `grub` that includes `i386-efi` platform support, this
 is needed on most of the Baytrail-M devices. Check, or do your research to make sure.
@@ -28,20 +42,6 @@ And finally configure GRUB.
 
 ```bash
 grub-mkconfig -o /boot/grub/grub.cfg
-```
-
-##Initrd generation
-It is required for devices using Realtek-based eMMC/SDIO controllers to generate an `initrd`
-(an initialization RAM disk) for AOSC OS to detect the SD card/eMMC controller during the
-boot. Without an `initrd` AOSC OS will fail to boot with such controllers. If you are sure
-that you are not using a Realtek-based controller, you may skip this process as the Linux
-kernel configuration has the support built in.
-
-```bash
-# find our the shipped kernel version
-ls /usr/lib/modules
-# and "dracut" the initrd, with the kernel version you found, replace ${kernver} with the one you found
-dracut ${kernver}
 ```
 
 Workarounds and quirks
