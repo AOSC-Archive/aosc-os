@@ -6,6 +6,10 @@ Here is a simple yet complete guide on installation of AOSC OS.
 
 You may want to read [Notes for Baytrail](https://github.com/AOSC-Dev/aosc-os/blob/master/notes-for-baytrail.md) after you have finished installing according to this guide for issue workarounds and tips.
 
+### On an array
+
+If you plan on installing AOSC OS on a MD-based RAID array (in other words, software RAID), please read the variant of guide - [Notes for MD-RAID Arrays](https://github.com/AOSC-Dev/aosc-os/blob/master/notes-for-md-raid.md) - designed for these set-ups.
+
 ## Tarballs
 
 A tarball is the basic and main way we ship AOSC OS as, a "tarball" literally means a system all packed in a `tar.xz` archive. It is probably the fastest way to "physically" install a copy of AOSC OS on your device.
@@ -60,11 +64,10 @@ chroot ${MOUNT} /bin/bash
 Note: if the system did not ship with an initrd, GRUB will not support UUID in configuration; if you would like to
 use the UUID feature, you would need to generate one yourself with `dracut`.
 
+With package `dracut`'s trigger system, it is possible to generate initramfs in chroot.
+
 ```bash
-# find our the shipped kernel version
-ls /usr/lib/modules
-# and "dracut" the initrd, with the kernel version you found, replace ${kernver} with the one you found
-dracut ${kernver}
+. /var/ab/triggered/dracut
 ```
 
 Install GRUB.
