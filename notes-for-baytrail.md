@@ -14,11 +14,10 @@ boot. Without an `initrd` AOSC OS will fail to boot with such controllers. If yo
 that you are not using a Realtek-based controller, you may skip this process as the Linux
 kernel configuration has the support built in.
 
+With package `dracut`'s trigger system, it is possible to generate initramfs in chroot.
+
 ```bash
-# find our the shipped kernel version
-ls /usr/lib/modules
-# and "dracut" the initrd, with the kernel version you found, replace ${kernver} with the one you found
-dracut ${kernver}
+. /var/ab/triggered/dracut
 ```
 
 ##Non-64 bit EFI
