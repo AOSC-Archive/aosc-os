@@ -107,4 +107,4 @@ And `root` has the same.
 
 BuildKit's installation (deployment) is strikingly similar to tarballs, the only difference is that you won't need a dedicated partition, or even bother configuring a boot loader.
 
-For more details on deploying BuildKit, see [here](https://github.com/AOSC-Dev/aosc-os-abbs/wiki/Getting-started).
+For more details on deploying BuildKit, see [here](https://github.com/AOSC-Dev/aosc-os-abbs/wiki/Preparing-What-is-BuildKit).
