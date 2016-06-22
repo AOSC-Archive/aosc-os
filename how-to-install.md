@@ -2,13 +2,18 @@
 
 Here is a simple yet complete guide on installation of AOSC OS.
 
-### Baytrail device users
+### Notes for Baytrail device users
 
 You may want to read [Notes for Baytrail](https://github.com/AOSC-Dev/aosc-os/blob/master/notes-for-baytrail.md) after you have finished installing according to this guide for issue workarounds and tips.
 
-### On an array
+### Notes for MD-based RAID arrays
 
 If you plan on installing AOSC OS on a MD-based RAID array (in other words, software RAID), please read the variant of guide - [Notes for MD-RAID Arrays](https://github.com/AOSC-Dev/aosc-os/blob/master/notes-for-md-raid.md) - designed for these set-ups.
+
+### Notes for Parallels Workstation
+
+Installing on AOSC OS on Parallels Workstation as a virtual machine is doable, but some notes should be taken
+before you proceed. Please refer to [Notes for Parallels Workstation](https://github.com/AOSC-Dev/aosc-os/blob/master/notes-for-parallels-workstation.md).
 
 ## Tarballs
 
