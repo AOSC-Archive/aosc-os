@@ -16,7 +16,7 @@ on Parallels Workstation 2016 - but not on anything older than that.
 
 Installing AOSC OS on Parallels Workstation takes all the normal procedures
 (just like you do on a real x86_64 machine). So you might want to refer back to
-the main [Installation Guide]](https://github.com/AOSC-Dev/aosc-os/blob/master/notes-for-md-raid.md)
+the main [Installation Guide](https://github.com/AOSC-Dev/aosc-os/blob/master/notes-for-md-raid.md)
 before you proceed any further.
 
 After the installation, you might find that AOSC OS is running with:
