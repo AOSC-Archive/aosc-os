@@ -94,6 +94,11 @@ And finally configure GRUB.
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
+
+*Note: you may find that other operating systems, e.g. Windows, OS X is not being detected. This is to be expected
+when generating GRUB configuration inside of `chroot`, you should repeat this process after AOSC OS is installed,
+after you have boot into AOSC OS.*
+
 #### Multiple partition scenario
 
 If you have chosen to split `/home` or whatever to another partition, remember to write a valid `/etc/fstab` file.
