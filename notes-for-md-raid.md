@@ -79,7 +79,7 @@ The shell code below shows how it is been done.
 
 ```bash
 cd ${MOUNT}
-tar pxf /path/to/tarball.tar.xz
+tar pxvf /path/to/tarball.tar.xz
 # add "v" to paramenter for a much more exciting experience.
 ```
 

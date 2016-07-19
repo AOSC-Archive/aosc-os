@@ -60,7 +60,7 @@ Now we are ready to deploy the tarball. Let's do that all at once.
 
 ```
 # cd /mnt
-# tar pxf /path/to/tarball/tarball.tar.xz
+# tar pxvf /path/to/tarball/tarball.tar.xz
 ```
 
 Just to make sure.
