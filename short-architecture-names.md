@@ -38,3 +38,10 @@ Triplet: powerpc-aosc-linux-gnu
 64-bit big endian PowerPC processors.
 
 Triplet: powerpc64-aosc-linux-gnu
+
+# Architectures that cannot run AOSC OS
+
+## rv32
+32-bit Risc-V architecture.
+
+Triplet: riscv32-unknown-elf
