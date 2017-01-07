@@ -158,3 +158,13 @@ Now you are done. Remove the LiveCD and reboot to enjoy your AOSC OS virtual mac
 The default "normal" user `aosc` has `anthon` as password.
 
 And `root` has the same.
+
+## FAQ
+
+Q: I am seeing annoying warnings like
+```
+[TTM] Buffer eviction failed
+qxl 0000:00:02.0: object_init failed for (4026540032, 0x00000001)
+[drm:qxl_alloc_bo_reserved [qxl]] *ERROR* failed to allocate VRAM BO
+```
+A: Please change your Video model of the VM from QXL to Virtio.
