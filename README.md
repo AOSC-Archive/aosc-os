@@ -15,8 +15,8 @@ For Users
   - [System Requirements](https://github.com/AOSC-Dev/aosc-os/wiki/ARM_System_Requirements)
 - [AOSC OS Installation Guide (PowerPC 32/64-bit)](https://github.com/AOSC-Dev/aosc-os/wiki/PPC_Installation)
   - [System Requirements](https://github.com/AOSC-Dev/aosc-os/wiki/PPC_System_Requirements)
-- AOSC OS Installation Guide (MIPS32/64) (TODO)
-  - System Requirements (TODO)
+- [AOSC OS Installation Guide (MIPS32/64)](https://github.com/AOSC-Dev/aosc-os/wiki/MIPS_Installation)
+  - [System Requirements](https://github.com/AOSC-Dev/aosc-os/wiki/MIPS_System_Requirements)
 
 For Developers
 --------------
