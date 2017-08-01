@@ -137,6 +137,7 @@ This section lists all changes made, and effective with this wave of update - in
 
 This section is essentially a (slightly edited for reference) list of Git commits made to the `staging` (testing) branch of our ABBS tree. This list is chronologically sorted, with oldest commits on top.
 
+```
 ac5344ef9 atom: update to 1.18.0 (amd64)
 7cade1e60 vim: update to 8.0.0691
 179605623 shadowsocks-libev: update to 3.0.7
@@ -592,6 +593,7 @@ ea40f2cfa apt: fix src link (no rebuild)
 b84b9b398 openscenegraph: fix build (no rebuild)
 8df0c665b libdbusmenu: fix the dependency for gtk-2
 6830cf7c8 wireshark: fix src link
+```
 
 Delayed Updates
 -----------------
@@ -604,6 +606,7 @@ These changes listed in the paragraph below are changes intended but not impleme
 
 These changes are made to the `staging` (or main testing branch) **after** Day 25 and are thus excluded from this month's update.
 
+```
 1028a9a7e linux-kernel-lts: remove useless autobuild/patch
 36e375622 linux-kernel-lts: upgrade to 4.9.38
 0b6362ca4 linux+kernel+lts: bump VER for 4.9.38
@@ -652,12 +655,14 @@ a383b2a02 v2ray: fix some mistake in build script
 3c2edf752 funcsigs: upgrade to 1.0.2, fix upstream link
 da36a2b36 nbd: new, 3.16.1
 f1d086859 nbd: fix systemd service file installation
+```
 
 Bugfix Updates
 ----------------
 
 These updates were committed and made available to AOSC OS throughout the month as bug fix updates, and could contain major functionality improvements and security updates, the list below, like those listed in the two sections above, is a list of Git commits made to this particular branch (again, slightly edited for reference).
 
+```
 c7f442bb1 cyanberry-config: update to 0.1.2 (noarch)
 9a7dd708c libgcrypt{,+32}: update to 1.7.8 (security); fix #671
 7d004ff46 unrar: update to 5.5.5 (security); fix #670
@@ -690,6 +695,7 @@ b0076ab32 open-vm-tools: security update; fix #686 (amd64)
 a27cd7bee linux-kernel: hotfix #687
 5448de665 linux-kernel: hotfix #687
 bdd70f804 linux-kernel-libre: hotfix for liberal broadcom #687
+```
 
 Problems sir?
 ---------------
